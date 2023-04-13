@@ -17,6 +17,7 @@ const server = http.createServer((req, res) => {
   res.write("</body>");
 
   res.write("</html>");
+  res.end();
 });
 
 server.listen(PORT);
