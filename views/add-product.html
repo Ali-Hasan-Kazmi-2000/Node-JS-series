@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Add Product</title>
+</head>
+
+<body>
+    <header class="bg-yellow-500 text-lg py-3">
+        <nav>
+            <ul class="flex flex-row md:max-w-xs w-[45%] justify-around  md:items-center md:justify-evenly text-md font-lg md:font-medium">
+                <li><a class="text-white hover:text-purple-700 " href="/">Shop</a></li>
+                <li><a href="/admin/add-product" class="text-purple-700 hover:text-purple-700">Add Product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main >
+        <form class="flex flex-col  justify-center w-full   py-8 md:ml-14 ml-6" action="/admin/add-product" method="POST">
+            <label class="block font-medium text-left">Title</label>
+            <div class="md:w-[60%]">
+            <input class="border border-yellow-400 border-2 w-[60%] outline-none md:p-1" type="text" name="title">
+            <button class="border border-2 border-purple-700 hover:bg-purple-700 hover:text-white text-purple-700 md:p-1 px-1" type="submit">Add Product</button>
+        </div>
+        </form>
+    </main>
+</body>
+
+</html>
